@@ -1,0 +1,72 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="index.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+
+    <title>Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="grid-item  container">
+        <div class="">
+            <h2>calc</h2>
+        </div>
+
+        <div class="radiobar">
+         <input type="radio" name="theme" id="theme-1" checked onclick="themeOne()">
+         <input type="radio" name="theme" id="theme-2" onclick="themeTwo()">
+         <input type="radio" name="theme" id="theme-3" onclick="themeThree()">
+               <p>THEME</p>
+       </div>
+
+      </div>
+
+      <div class="grid-item">
+        <input class="input" type="text" name="" value="" id="result">
+      </div>
+      <div class="grid-item-container">
+        <div class="grid-item-item" onclick="dis('7')">7</div>
+        <div class="grid-item-item" onclick="dis('8')">8</div>
+        <div class="grid-item-item" onclick="dis('9')">9</div>
+        <div class="grid-item-item  DEL" onclick="DEL()">DEL</div>
+        <div class="grid-item-item" onclick="dis('4')">4</div>
+        <div class="grid-item-item"onclick="dis('5')">5</div>
+        <div class="grid-item-item"onclick="dis('6')">6</div>
+        <div class="grid-item-item"onclick="dis('+')">+</div>
+        <div class="grid-item-item"onclick="dis('1')">1</div>
+        <div class="grid-item-item"onclick="dis('2')">2</div>
+        <div class="grid-item-item"onclick="dis('3')">3</div>
+        <div class="grid-item-item"onclick="dis('-')">-</div>
+        <div class="grid-item-item"onclick="dis('.')">.</div>
+        <div class="grid-item-item"onclick="dis('0')">0</div>
+        <div class="grid-item-item"onclick="dis('/')">/</div>
+        <div class="grid-item-item"onclick="dis('x')">x</div>
+        <div class="grid-item-item-container">
+          <div class="grid-item-item  RESET" onclick="clr()">RESET</div>
+          <div class="grid-item-item EQUAL" onclick="solve()">=</div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  </html>
